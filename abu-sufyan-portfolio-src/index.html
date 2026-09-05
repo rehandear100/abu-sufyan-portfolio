@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abu Sufyan — Developer Portfolio</title>
+<meta name="description" content="Abu Sufyan — BS Student, Developer & Problem Solver. Portfolio of projects, skills and experience.">
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- Google Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (code/utility) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Local stylesheet -->
+<link rel="stylesheet" href="style.css">
+<!-- Favicon using the logo -->
+<link rel="icon" type="image/png" href="assets/logo-black.png">
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+     ============================================================ -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <div class="logo">
+      <img src="assets/logo-black.png" alt="Abu Sufyan logo" class="logo-img">
+    </div>
+    <div class="nav-tabs">
+      <a href="#home" class="nav-tab active"><span class="file-dot"></span>Home</a>
+      <a href="#about" class="nav-tab"><span class="file-dot"></span>About</a>
+      <a href="#education" class="nav-tab"><span class="file-dot"></span>Education</a>
+      <a href="#skills" class="nav-tab"><span class="file-dot"></span>Skills</a>
+      <a href="#projects" class="nav-tab"><span class="file-dot"></span>Projects</a>
+      <a href="#experience" class="nav-tab"><span class="file-dot"></span>Experience</a>
+      <a href="#contact" class="nav-tab"><span class="file-dot"></span>Contact</a>
+    </div>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode"><i class="fa-solid fa-moon"></i></button>
+      <button class="nav-burger" id="burgerBtn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO SECTION
+     ============================================================ -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow"><span class="pulse"></span> Available For New Opportunities.</div>
+      <h1>Hi, I'm Abu Sufyan. <br> I build things for <span class="grad">the Web.</span></h1>
+      <p class="lead">A BS student who loves turning ideas into clean, working software. I focus on practical projects, readable code, and interfaces people actually enjoy using.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
+        <a href="#contact" class="btn btn-ghost"><i class="fa-regular fa-paper-plane"></i> Get In Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>6+</strong><span>PROJECTS_BUILT</span></div>
+        <div><strong>2+</strong><span>YEARS_LEARNING</span></div>
+        <div><strong>5+</strong><span>CERTIFICATES</span></div>
+      </div>
+    </div>
+
+    <div class="terminal reveal">
+      <div class="terminal-bar">
+        <span class="tb-red"></span><span class="tb-yellow"></span><span class="tb-green"></span>
+        <span class="tb-title"></span>
+      </div>
+      <div class="terminal-body">
+        <div class="line"><span class="prompt">abu-sufyan@portfolio</span>: Who Am I?</div>
+        <div class="line" id="typedLine"><span id="typedOutput"></span><span class="cursor">&nbsp;</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT SECTION 
+     ============================================================ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-tag">about-me</div>
+    <h2 class="section-title reveal">Turning Ideas into Reliable, Working Software.</h2>
+    <div class="about-grid">
+      <div class="about-photo glass reveal">
+        <span><img src="abusufyanimage.png" alt="Abu Sufyan"></span>
+      </div>
+      <div class="about-text reveal">
+        <p>I'm Abu Sufyan, a BS student who spends most of my time learning how software is actually built — not just in theory, but by shipping real, working projects.</p>
+        <p>I enjoy the process of taking a rough idea, breaking it into small pieces, and building it step by step until it becomes something people can actually use. Along the way I've picked up front-end development, basic back-end logic, and a habit of writing code that's easy to read months later.</p>
+        <p>Outside of coursework, I'm usually experimenting with a new tool, polishing an old project, or reading about how larger applications are designed.</p>
+        <div class="about-facts">
+          <div class="fact glass"><i class="fa-solid fa-graduation-cap"></i><h4>BS Student</h4><span>Currently in progress</span></div>
+          <div class="fact glass"><i class="fa-solid fa-code"></i><h4>Web Developer</h4><span>HTML · CSS · JS</span></div>
+          <div class="fact glass"><i class="fa-solid fa-location-dot"></i><h4>Based In</h4><span>Islampur Swat KPK Pakistan</span></div>
+          <div class="fact glass"><i class="fa-solid fa-mug-hot"></i><h4>Fuelled By</h4><span>Curiosity &amp; coffee</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EDUCATION TIMELINE
+     ============================================================ -->
+<section class="section" id="education">
+  <div class="container">
+    <div class="section-tag">education</div>
+    <h2 class="section-title reveal">My academic journey</h2>
+    <p class="section-sub reveal">A quick timeline of my education so far — ordered from where I started to where I am today.</p>
+
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <span class="tl-year">MATRICULATION</span>
+          <h3>Secondary School Certificate</h3>
+          <p class="school">Science Group</p>
+          <p class="desc">Built a strong foundation in mathematics and computer studies, which sparked my early interest in technology.</p>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <span class="tl-year">INTERMEDIATE</span>
+          <h3>Higher Secondary (FSc Pre-Engineering)</h3>
+          <p class="school">Pre-Engineering Group</p>
+          <p class="desc">Strengthened my problem-solving skills through physics and mathematics, and started learning programming basics on my own.</p>
+        </div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass">
+          <span class="tl-year">CURRENT</span>
+          <h3>BS Program — In Progress</h3>
+          <p class="school">University Undergraduate Program</p>
+          <p class="desc">Studying core subjects while building real, hands-on web projects alongside my coursework to apply what I learn.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SKILLS
+     ============================================================ -->
+<section class="section" id="skills">
+  <div class="container">
+    <div class="section-tag">skills</div>
+    <h2 class="section-title reveal">What I work with</h2>
+    <p class="section-sub reveal">Core skills I use to design, build, and ship projects — from the interface down to the logic underneath.</p>
+
+    <div class="skills-grid">
+      <div>
+        <div class="skill-row reveal">
+          <div class="skill-top"><span>HTML &amp; CSS</span><span class="pct">92%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="92"></div></div>
+        </div>
+        <div class="skill-row reveal">
+          <div class="skill-top"><span>JavaScript</span><span class="pct">85%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-row reveal">
+          <div class="skill-top"><span>Responsive Design</span><span class="pct">88%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="skill-row reveal">
+          <div class="skill-top"><span>UI / UX Basics</span><span class="pct">80%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-row reveal">
+          <div class="skill-top"><span>Version Control (Git)</span><span class="pct">75%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="75"></div></div>
+        </div>
+        <div class="skill-row reveal">
+          <div class="skill-top"><span>Problem Solving</span><span class="pct">90%</span></div>
+          <div class="bar-track"><div class="bar-fill" data-width="90"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-tools reveal">
+      <div class="tool-chips">
+        <div class="chip glass"><i class="fa-brands fa-html5"></i> HTML5</div>
+        <div class="chip glass"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+        <div class="chip glass"><i class="fa-brands fa-js"></i> JavaScript</div>
+        <div class="chip glass"><i class="fa-brands fa-git-alt"></i> Git</div>
+        <div class="chip glass"><i class="fa-brands fa-github"></i> GitHub</div>
+        <div class="chip glass"><i class="fa-solid fa-layer-group"></i> Figma Basics</div>
+        <div class="chip glass"><i class="fa-solid fa-database"></i> SQL Basics</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SERVICES
+     ============================================================ -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-tag">services</div>
+    <h2 class="section-title reveal">How I can help</h2>
+    <p class="section-sub reveal">A few ways I like to work with people and teams on web projects.</p>
+
+    <div class="services-grid">
+      <div class="service-card glass reveal">
+        <span class="service-num">01</span>
+        <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+        <h3>Web Development</h3>
+        <p>Building responsive, fast-loading websites from scratch using clean HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="service-card glass reveal">
+        <span class="service-num">02</span>
+        <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+        <h3>UI Design</h3>
+        <p>Designing simple, modern interfaces that are easy to navigate and pleasant to look at.</p>
+      </div>
+      <div class="service-card glass reveal">
+        <span class="service-num">03</span>
+        <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+        <h3>Responsive Layouts</h3>
+        <p>Making sure every project looks and works great on mobile, tablet, and desktop screens alike.</p>
+      </div>
+      <div class="service-card glass reveal">
+        <span class="service-num">04</span>
+        <div class="service-icon"><i class="fa-solid fa-bug"></i></div>
+        <h3>Bug Fixing</h3>
+        <p>Debugging existing websites and applications to improve performance and reliability.</p>
+      </div>
+      <div class="service-card glass reveal">
+        <span class="service-num">05</span>
+        <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+        <h3>Performance Tuning</h3>
+        <p>Optimizing pages for faster load times and a smoother overall user experience.</p>
+      </div>
+      <div class="service-card glass reveal">
+        <span class="service-num">06</span>
+        <div class="service-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+        <h3>Peer Mentoring</h3>
+        <p>Helping fellow students understand programming fundamentals and get started with web development.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     PORTFOLIO / PROJECTS
+     ============================================================ -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-tag">portfolio</div>
+    <h2 class="section-title reveal">Selected projects</h2>
+    <p class="section-sub reveal">A mix of front-end and full-page builds — click any project to open a live preview.</p>
+
+    <div class="filter-row reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Apps</button>
+      <button class="filter-btn" data-filter="ui">UI Design</button>
+      <button class="filter-btn" data-filter="tool">Tools</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+      <div class="project-card glass reveal" data-cat="web">
+        <div class="project-thumb"><i class="fa-solid fa-cart-shopping"></i></div>
+        <div class="project-body">
+          <span class="project-tag">WEB APP</span>
+          <h3>E-Commerce Storefront</h3>
+          <p>A responsive online store concept with product listing, cart logic, and checkout flow.</p>
+          <div class="project-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+      </div>
+
+      <div class="project-card glass reveal" data-cat="tool">
+        <div class="project-thumb"><i class="fa-solid fa-list-check"></i></div>
+        <div class="project-body">
+          <span class="project-tag">TOOL</span>
+          <h3>Task Manager App</h3>
+          <p>A to-do list app with add, edit, complete, and delete tasks, backed by local storage.</p>
+          <div class="project-stack"><span>JavaScript</span><span>CSS</span><span>LocalStorage</span></div>
+        </div>
+      </div>
+
+      <div class="project-card glass reveal" data-cat="web">
+        <div class="project-thumb"><i class="fa-solid fa-cloud-sun"></i></div>
+        <div class="project-body">
+          <span class="project-tag">WEB APP</span>
+          <h3>Weather Dashboard</h3>
+          <p>A clean weather lookup app showing live conditions and a simple multi-day forecast.</p>
+          <div class="project-stack"><span>JavaScript</span><span>API</span><span>CSS Grid</span></div>
+        </div>
+      </div>
+
+      <div class="project-card glass reveal" data-cat="ui">
+        <div class="project-thumb"><i class="fa-solid fa-blog"></i></div>
+        <div class="project-body">
+          <span class="project-tag">UI DESIGN</span>
+          <h3>Blog Platform Concept</h3>
+          <p>A minimal blog UI with article cards, category filters, and a distraction-free reading view.</p>
+          <div class="project-stack"><span>HTML</span><span>CSS</span><span>Figma</span></div>
+        </div>
+      </div>
+
+      <div class="project-card glass reveal" data-cat="web">
+        <div class="project-thumb"><i class="fa-solid fa-utensils"></i></div>
+        <div class="project-body">
+          <span class="project-tag">WEB APP</span>
+          <h3>Restaurant Booking System</h3>
+          <p>A table reservation interface with date/time selection and instant availability feedback.</p>
+          <div class="project-stack"><span>HTML</span><span>JavaScript</span><span>CSS</span></div>
+        </div>
+      </div>
+
+      <div class="project-card glass reveal" data-cat="ui">
+        <div class="project-thumb"><i class="fa-solid fa-id-card"></i></div>
+        <div class="project-body">
+          <span class="project-tag">UI DESIGN</span>
+          <h3>Personal Portfolio (LIKE This Site)</h3>
+          <p>The very page you're looking at — designed and coded from scratch with a code-editor theme.</p>
+          <div class="project-stack"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EXPERIENCE
+     ============================================================ -->
+<section class="section" id="experience">
+  <div class="container">
+    <div class="section-tag">experience</div>
+    <h2 class="section-title reveal">Where I've applied what I've learned</h2>
+
+    <div class="exp-list">
+      <div class="exp-item reveal">
+        <div class="exp-period">2025 — PRESENT</div>
+        <div class="exp-role">
+          <h3>Freelance Web Developer</h3>
+          <p class="org">Self-Employed</p>
+          <ul>
+            <li>Built responsive landing pages and small websites for local clients.</li>
+            <li>Handled everything from layout design to final deployment.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="exp-item reveal">
+        <div class="exp-period">2024 — 2025</div>
+        <div class="exp-role">
+          <h3>Web Development Intern</h3>
+          <p class="org">Local Tech Startup</p>
+          <ul>
+            <li>Assisted in building and testing UI components for a web application.</li>
+            <li>Learned real-world Git workflows and code review practices.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="exp-item reveal">
+        <div class="exp-period">2023 — 2024</div>
+        <div class="exp-role">
+          <h3>Student Tech Volunteer</h3>
+          <p class="org">University Tech Society</p>
+          <ul>
+            <li>Helped organize coding workshops for first-year students.</li>
+            <li>Managed the society's website content and updates.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CERTIFICATES
+     ============================================================ -->
+<section class="section" id="certificates">
+  <div class="container">
+    <div class="section-tag">certificates</div>
+    <h2 class="section-title reveal">Courses &amp; certifications</h2>
+
+    <div class="cert-grid">
+      <div class="cert-card glass reveal">
+        <div class="cert-badge"><i class="fa-solid fa-certificate"></i></div>
+        <div><h4>Responsive Web Design</h4><span>Self-Paced Course</span></div>
+      </div>
+      <div class="cert-card glass reveal">
+        <div class="cert-badge"><i class="fa-solid fa-certificate"></i></div>
+        <div><h4>JavaScript Fundamentals</h4><span>Online Certification</span></div>
+      </div>
+      <div class="cert-card glass reveal">
+        <div class="cert-badge"><i class="fa-solid fa-certificate"></i></div>
+        <div><h4>Git &amp; GitHub Basics</h4><span>Online Certification</span></div>
+      </div>
+      <div class="cert-card glass reveal">
+        <div class="cert-badge"><i class="fa-solid fa-certificate"></i></div>
+        <div><h4>UI/UX Design Foundations</h4><span>Online Certification</span></div>
+      </div>
+      <div class="cert-card glass reveal">
+        <div class="cert-badge"><i class="fa-solid fa-certificate"></i></div>
+        <div><h4>Database Fundamentals (SQL)</h4><span>University Course</span></div>
+      </div>
+      <div class="cert-card glass reveal">
+        <div class="cert-badge"><i class="fa-solid fa-certificate"></i></div>
+        <div><h4>Problem Solving with Programming</h4><span>University Course</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS
+     ============================================================ -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="section-tag">testimonials</div>
+    <h2 class="section-title reveal">What people say</h2>
+
+    <div class="testi-grid">
+      <div class="testi-card glass reveal">
+        <i class="fa-solid fa-quote-left quote"></i>
+        <p>Abu Sufyan delivered a clean, responsive site well ahead of schedule and was easy to communicate with throughout.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">H</div>
+          <div><h5>Hamza Hassan.</h5><span>Small Business Owner</span></div>
+        </div>
+      </div>
+      <div class="testi-card glass reveal">
+        <i class="fa-solid fa-quote-left quote"></i>
+        <p>He explains technical ideas in a way that's easy to follow, which made our project collaboration really smooth.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">R</div>
+          <div><h5>Rehan Nawaz.</h5><span>Fellow Student</span></div>
+        </div>
+      </div>
+      <div class="testi-card glass reveal">
+        <i class="fa-solid fa-quote-left quote"></i>
+        <p>Great attention to detail on the UI — the final result looked far more polished than what we expected.</p>
+        <div class="testi-person">
+          <div class="testi-avatar">T</div>
+          <div><h5>Muhammad Taimoor.</h5><span>Startup Founder</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT
+     ============================================================ -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-tag">contact</div>
+    <h2 class="section-title reveal">Let's build something together</h2>
+    <p class="section-sub reveal">Have a project in mind or just want to say hello? Send a message below.</p>
+
+    <div class="contact-grid">
+      <div class="contact-info-card glass reveal">
+        <div class="contact-row">
+          <i class="fa-solid fa-envelope"></i>
+          <div><h5>Email</h5><span>kabusufyan@gmail.com</span></div>
+        </div>
+        <div class="contact-row">
+          <i class="fa-solid fa-phone"></i>
+          <div><h5>Phone</h5><span>+92 346 6180919</span></div>
+        </div>
+        <div class="contact-row">
+          <i class="fa-solid fa-location-dot"></i>
+          <div><h5>Location</h5><span>Islampur Swat KPK Pakistan</span></div>
+        </div>
+        <div class="contact-row">
+          <i class="fa-brands fa-whatsapp"></i>
+          <div><h5>Whatsapp</h5><span>whatsapp.me/abusufyan</span></div>
+        </div>
+      </div>
+
+      <form class="contact-form glass reveal" id="contactForm">
+        <div class="form-row">
+          <div class="field">
+            <label for="cf-name">Full Name</label>
+            <input type="text" id="cf-name" required placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="cf-email">Email Address</label>
+            <input type="email" id="cf-email" required placeholder="you@example.com">
+          </div>
+        </div>
+        <div class="field" style="margin-bottom:18px;">
+          <label for="cf-subject">Subject</label>
+          <input type="text" id="cf-subject" placeholder="What's this about?">
+        </div>
+        <div class="field">
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" required placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="margin-top:20px;"><i class="fa-regular fa-paper-plane"></i> Send Message</button>
+        <div id="formStatus"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="assets/logo-black.png" alt="Abu Sufyan logo" class="logo-img">
+      </div>
+      <div class="footer-social">
+        <a href="https://whatsapp.com/abusufyan" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/in/abusufyankhan" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.tiktok.com/@abusufyan" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        <a href="https://www.instagram.com/abusufyan" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:kabusufyan@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Abu Sufyan. All rights reserved.</span>
+      <span>Built with HTML, CSS &amp; JavaScript</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- Local script -->
+<script src="script.js"></script>
+</body>
+</html>
